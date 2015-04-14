@@ -12,7 +12,8 @@ echo "The gcd for $m and  $n is:"
 
 r=1
 while [ "$r" != "0" ];do
-	q=$(expr $m / $n)
+	q=$(($m / $n))
+	#q=$(expr $m / $n)
 	r=$(expr $m % $n)
 	echo "$m $n $q $r"
 	m=$n
